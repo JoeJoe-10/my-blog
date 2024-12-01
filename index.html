@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>My Blog</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <a href="archive.html">Archive</a>
+                <button id="theme-toggle">🌙 Dark Mode</button>
+            </nav>
+            
+        </div>
+    </header>
+    
+    <!-- Carousel Section -->
+    <div class="carousel">
+        <div class="carousel-container">
+            <div class="carousel-item active">
+                <h2>Featured Post 1</h2>
+                <p>Discover the highlights of our latest article!</p>
+            </div>
+            <div class="carousel-item">
+                <h2>Featured Post 2</h2>
+                <p>Check out this trending topic!</p>
+            </div>
+            <div class="carousel-item">
+                <h2>Featured Post 3</h2>
+                <p>Learn something new every day!</p>
+            </div>
+        </div>
+        <button class="carousel-control prev">❮</button>
+        <button class="carousel-control next">❯</button>
+    </div>
+    
+    <main>
+        <section id="posts">
+            <div class="container">
+                <div class="post" data-content="This is the full content of the first blog post.">
+                    <h2>Welcome to My Blog</h2>
+                    <p>This is the first post on my blog. Stay tuned for more updates!</p>
+                    <div class="tags">
+                        <span data-tag="Welcome">#Welcome</span>
+                        <span data-tag="Introduction">#Introduction</span>
+                    </div>
+                    <span>Published on: <time>2024-12-01</time></span>
+                    <button class="read-more">Read More</button>
+                    <div class="post" data-content="This is the full content of the first blog post.">
+        
+                        <!-- Post Comment Section -->
+                      <div class="post-comments">
+                          <h3>Post Comment Section</h3>
+                          <ul class="comment-list"></ul>
+                          <form class="comment-form">
+                              <textarea placeholder="Write a comment..." required></textarea>                                <button type="submit">Post Comment</button>
+                          </form>
+                      </div>
+          
+                      <!-- Post Likes -->
+                      <div class="post-likes">
+                          <button class="like-button">Like</button>
+                          <span class="like-count">0 Likes</span>
+                      </div>
+              </div>  
+                <div class="post" data-content="This is the full content of the second blog post.">
+                    <h2>Another Post</h2>
+                    <p>Here’s another entry for my readers. Feel free to leave comments!</p>
+                    <div class="tags">
+                        <span data-tag="Update">#Update</span>
+                        <span data-tag="News">#News</span>
+                    </div>
+                    <span>Published on: <time>2024-11-30</time></span>
+                    <button class="read-more">Read More</button>
+                    <div class="post" data-content="This is the full content of the first blog post.">
+        
+                        <!-- Post Comment Section -->
+                      <div class="post-comments">
+                          <h3>Post Comment Section</h3>
+                          <ul class="comment-list"></ul>
+                          <form class="comment-form">
+                              <textarea placeholder="Write a comment..." required></textarea>                                <button type="submit">Post Comment</button>
+                          </form>
+                      </div>
+          
+                      <!-- Post Likes -->
+                      <div class="post-likes">
+                          <button class="like-button">Like</button>
+                          <span class="like-count">0 Likes</span>
+                      </div>
+              </div>  
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Modal -->
+    <div id="post-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-body"></p>
+        </div> 
+    </div>       
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 My Blog. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
